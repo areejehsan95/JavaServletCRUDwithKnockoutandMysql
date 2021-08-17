@@ -1,0 +1,14 @@
+/home/dev/eclipse-workspace/TemplateProject/src/io/gosaas/assessment/web/AMLServlet.java
+/home/dev/eclipse-workspace/TemplateProject/src/io/gosaas/assessment/web/AttachmentServlet.java
+/home/dev/eclipse-workspace/TemplateProject/src/io/gosaas/assessment/databaseAccessObject/AttachmentDAO.java
+/home/dev/eclipse-workspace/TemplateProject/src/io/gosaas/assessment/databaseAccessObject/StructureDAO.java
+/home/dev/eclipse-workspace/TemplateProject/src/io/gosaas/assessment/models/Attachment.java
+/home/dev/eclipse-workspace/TemplateProject/src/io/gosaas/assessment/databaseAccessObject/ItemDAO.java
+/home/dev/eclipse-workspace/TemplateProject/src/io/gosaas/assessment/databaseAccessObject/AMLDAO.java
+/home/dev/eclipse-workspace/TemplateProject/src/io/gosaas/assessment/handleProperties/LoadPropertyFile.java
+/home/dev/eclipse-workspace/TemplateProject/src/io/gosaas/assessment/web/ItemServlet.java
+/home/dev/eclipse-workspace/TemplateProject/src/io/gosaas/assessment/handleProperties/WritePropertyFile.java
+/home/dev/eclipse-workspace/TemplateProject/src/io/gosaas/assessment/models/AML.java
+/home/dev/eclipse-workspace/TemplateProject/src/io/gosaas/assessment/models/Item.java
+/home/dev/eclipse-workspace/TemplateProject/src/io/gosaas/assessment/models/Structure.java
+/home/dev/eclipse-workspace/TemplateProject/src/io/gosaas/assessment/web/StructureServlet.java

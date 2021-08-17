@@ -1,0 +1,26 @@
+body {
+  background: #DCDCDC;
+}
+
+.btn {
+	border-radius: 0;
+}
+
+.btn-primary {
+	background-color: #007ACC;
+	border-color: #007ACC;
+}
+
+#report-header {
+  background: #313131;
+  padding-top: 0px;
+}
+
+#report-header img {
+    height: 25px;
+    margin-top: 12px;
+}
+
+#report-title {
+	padding: 0px;
+}

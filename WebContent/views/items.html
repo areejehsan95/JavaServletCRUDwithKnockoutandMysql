@@ -1,0 +1,155 @@
+<div id="action_div_items" class="col-md-10 col-md-offset-1">
+	<br /> <br /> <br /> <br />
+
+
+	<div class="table-title">
+		<div class="row">
+			<div class="col-sm-6">
+				<h2>
+					Manage <b>Items</b>
+				</h2>
+			</div>
+			<div class="col-sm-6">
+				<a href="#addItemModal" class="btn btn-success" data-toggle="modal"><i
+					class="material-icons">&#xE147;</i> <span>Add New Item</span></a>
+				<a data-bind="click: onLoad" class="btn btn-primary"><i
+					class="material-icons">rotate_right</i> <span>Load Data</span></a>
+			</div>
+		</div>
+
+	</div>
+	<div class="container-xl">
+		<div class="table-responsive tableFixHead">
+			<div class="table-wrapper">
+
+				<table class="table table-striped table-hover">
+					<thead>
+						<tr>
+							<th>Item #</th>
+							<th>Item Class</th>
+							<th>Item Description</th>
+							<th>Actions</th>
+							<th>Navigations</th>
+						</tr>
+					</thead>
+					<tbody data-bind="foreach: items">
+						<tr>
+							<td data-bind="text: id"></td>
+							<td data-bind="text: Class"></td>
+							<td data-bind="text: description"></td>
+							<td><a
+								href="#editItemModal" id="edit" class="edit" title="Edit"
+								data-toggle="modal" data-bind="click: $root.selectItem"><i
+									class="material-icons" data-toggle="tooltip" title="Edit">&#xE254;</i></a>
+								<a href="#deleteItemModal" class="delete" data-toggle="modal"
+								data-bind="click: $root.selectItem"><i
+									class="material-icons" data-toggle="tooltip" title="Delete">&#xE872;</i></a>
+							</td>
+							<td><a data-bind="click: $root.showStructure" class="view"><i
+									class="material-icons" data-toggle="tooltip" title="Structure">account_tree</i></a>
+								<a data-bind="click: $root.showAttachments" class="edit"><i
+									class="material-icons" data-toggle="tooltip"
+									title="Attachments">attachment</i></a> <a
+								data-bind="click: $root.showAml" class="delete"><i
+									class="material-icons" data-toggle="tooltip" title="AML">settings</i></a>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		</div>
+	</div>
+	<!-- Add Modal HTML -->
+	<div id="addItemModal" class="modal fade">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<form data-bind="submit: addItem">
+					<div class="modal-header">
+						<h4 class="modal-title">Add Item</h4>
+						<button type="button" class="close" data-dismiss="modal"
+							aria-hidden="true">&times;</button>
+					</div>
+					<div class="modal-body">
+						<div class="form-group">
+							<label>Item Class</label> <input
+								data-bind="textInput: newItemClass" type="text"
+								class="form-control" required>
+						</div>
+						<div class="form-group">
+							<label>Description</label>
+							<textarea data-bind="value: newItemdescription"
+								class="form-control" required></textarea>
+						</div>
+					</div>
+					<div class="modal-footer">
+						<input type="button" class="btn btn-default" data-dismiss="modal"
+							value="Cancel">
+						<button type="submit" class="btn btn-success" id="addbtn">Add</button>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+	<!-- Edit Modal HTML -->
+	<div id="editItemModal" class="modal fade">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<form data-bind="submit: updateItem">
+					<div class="modal-header">
+						<h4 class="modal-title">Edit Item</h4>
+						<button type="button" class="close" data-dismiss="modal"
+							aria-hidden="true">&times;</button>
+					</div>
+					<div class="modal-body">
+						<div class="form-group">
+							<label>Item Class</label> <input data-bind="value: editItemClass"
+								type="text" class="form-control" required>
+						</div>
+						<div class="form-group">
+							<label>Description</label>
+							<textarea data-bind="value: editItemdescription"
+								class="form-control" required></textarea>
+						</div>
+					</div>
+					<div class="modal-footer">
+						<input type="button" class="btn btn-default" data-dismiss="modal"
+							value="Cancel">
+						<button type="submit" class="btn btn-info" id="editbtn">Save</button>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+	<!-- Delete Modal HTML -->
+	<div id="deleteItemModal" class="modal fade">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<form data-bind="submit: deleteItem">
+					<div class="modal-header">
+						<h4 class="modal-title">Delete Item</h4>
+						<button type="button" class="close" data-dismiss="modal"
+							aria-hidden="true">&times;</button>
+					</div>
+					<div class="modal-body">
+						<p>Are you sure you want to delete these Items?</p>
+						<p class="text-warning">
+							<small>This action cannot be undone.</small>
+						</p>
+					</div>
+					<div class="modal-footer">
+						<input type="button" class="btn btn-default" data-dismiss="modal"
+							value="Cancel">
+						<button type="submit" class="btn btn-danger" id="deletebtn">Delete</button>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+
+	<!-- ko if: errors().length == 0 && validationCompleted -->
+	<div id="success_message">Process completed successfully</div>
+	<!-- /ko -->
+	<p class="border">
+		<button data-bind="click: closeWindow" class="d-block mr-0 ml-auto">Close</button>
+	</p>
+</div>

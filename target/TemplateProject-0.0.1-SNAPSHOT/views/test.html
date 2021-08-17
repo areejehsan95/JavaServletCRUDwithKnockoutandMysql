@@ -1,0 +1,19 @@
+<div id="action_div_test" class="col-md-10 col-md-offset-1">
+	<p>My name is : <h1 data-bind="text: name"></h1></p>
+	<p>Full name: <strong data-bind="text: fullName"></strong></p>
+	<br/>
+	
+	
+	
+    <p><b>ID</b><b>Class</b><b>Desc</b></p>
+    <ul data-bind="foreach: items">
+       <li>
+       	<span data-bind="text: id"></span>
+       	<span data-bind="text: Class"></span>
+       	<span data-bind="text: description"></span>
+       </li>
+    </ul>
+
+<button data-bind="click: loadData" class="btn">Load Data</button>
+
+</div>

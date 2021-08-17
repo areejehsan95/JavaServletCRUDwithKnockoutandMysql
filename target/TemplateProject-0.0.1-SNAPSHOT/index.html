@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
+    <meta http-equiv="Pragma" content="no-cache" />
+    <meta http-equiv="Expires" content="-1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.7/css/select2.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/select2-bootstrap-theme/0.1.0-beta.10/select2-bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="css/theme-apple.css" />
+    <link rel="stylesheet" href="css/bootstrap-col-24.css" />
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/style.css" />
+<!-- -------------------------- -->
+
+<!-- Google fonts -->
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Hahmlet:wght@400;700&display=swap" rel="stylesheet">
+	<!-- Theme CSS -->
+    <link id="theme-style" rel="stylesheet" href="~/css/theme-2.css">
+
+
+    <!--     Fonts and icons     -->
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:400,700|Material+Icons" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css">
+    <link href="~/css/site.css">
+    <!-- CSS Files -->
+    <link href="~/css/material-kit.css?v=2.0.7" rel="stylesheet" />
+    
+    <title>TemplateProject</title>
+  </head>
+
+  <body>
+    <div>
+      <div
+        id="index-errorDiv"
+        class="alert alert-success text-center col-lg-6 col-lg-offset-3 col-md-8 col-md-offset-2"
+        data-bind="attr:{class: footerClass}"
+      >
+        <span data-bind="html: msg"></span>
+        <i
+          class="glyphicon glyphicon-remove pull-right hand-pointer"
+          data-bind="click: hideMessage"
+        ></i>
+      </div>
+
+      <div id="mainPage">
+        <div id="report-header" class="row">
+          <div
+            id="report-header-logo-section"
+            class="col-md-10 col-md-offset-1"
+          >
+            <div id="report-title" class="pull-left">
+              <img src="images/logo-oracle-light.png" />
+            </div>
+            <div id="userId" class="pull-right"></div>
+          </div>
+        </div>
+        <div>
+          <div id="pageContainer"></div>
+        </div>
+      </div>
+    </div>
+
+    <div
+      id="pleaseWaitDialog"
+      class="modal fade"
+      data-backdrop="static"
+      data-keyboard="false"
+      role="dialog"
+      aria-labelledby="basicModal"
+      aria-hidden="true"
+      tabindex="-1"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-body">
+            <img src="images/loading.gif" />
+            <span
+              id="pleaseWaitMessage"
+              style="margin-left: 10px; font-size: 15px;"
+            ></span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+<script data-main="scripts/main.js" src="scripts/require.js"></script>
+    <script type="text/javascript" src="js/lib/jquery-1.11.1.min.js"></script>
+    <script type="text/javascript" src="js/lib/knockout-3.2.0.js"></script>
+    <script
+      type="text/javascript"
+      src="https://cdnjs.cloudflare.com/ajax/libs/knockout-validation/2.0.3/knockout.validation.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="js/lib/knockout-select2.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+    ></script>
+    <script type="text/javascript" src="js/lib/select2.full.js"></script>
+    <script type="text/javascript" src="js/lib/system.js"></script>
+    <script type="text/javascript" src="js/lib/sammy.js"></script>
+    <script
+      type="text/javascript"
+      src="js/lib/knockout.simpleGrid.3.0.js"
+    ></script>
+    <script
+      type="text/javascript"
+      data-main="js/main"
+      src="js/lib/require.js"
+    ></script>
+  </body>
+</html>
