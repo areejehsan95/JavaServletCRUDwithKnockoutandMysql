@@ -1,0 +1,220 @@
+<div id="action_div_attachments" class="col-md-10 col-md-offset-1">
+	<br /> <br /> <br /> <br />
+
+	<div class="table-title">
+		<div class="row">
+			<div class="col-sm-6">
+				<h2>
+					Item's <b>Attachments</b>
+				</h2>
+			</div>
+			<div class="col-sm-6">
+				<a href="#addAttachmentModal" class="btn btn-success" data-toggle="modal"><i class="material-icons">&#xE147;</i> <span>Add New Attachment</span></a> 
+				<a data-bind="click: backtoitems" class="btn btn-danger" data-toggle="modal"><i class="material-icons">reply</i> <span>Back to Items</span></a> 
+				<a data-bind="click: onLoad" class="btn btn-primary"><i class="material-icons">rotate_right</i> <span>Load Data</span></a>
+			</div>
+		</div>
+
+	</div>
+	<div class="container-xl">
+		<div class="table-responsive tableFixHead">
+			<div class="table-wrapper">
+
+				<table class="table table-striped table-hover">
+					<thead>
+						<tr>
+							<th>Item #</th>
+							<th>Attachment <br>#</th>
+							<th>File Name</th>
+							<th>Attachment Description</th>
+							<th>Category</th>
+							<th>Shared</th>
+							<th>Checked Out By</th>
+							<th>Revision</th>
+							<th>Actions</th>
+						</tr>
+					</thead>
+					<tbody data-bind="foreach: attachments">
+						<tr>
+							<td data-bind="text: itemid"></td>
+							<td data-bind="text: aid"></td>
+							<td data-bind="text: filename"></td>
+							<td data-bind="text: description"></td>
+							<td data-bind="text: category"></td>
+							<td data-bind="text: shared"></td>
+							<!--<td>
+						 	<span class="material-icons">check</span>
+							<span class="material-icons">clear</span>
+						</td>
+						-->
+							<td data-bind="text: checkedoutby"></td>
+							<td data-bind="text: revision"></td>
+							<td>
+								<a href="#" class="view" title="View" data-toggle="tooltip"><i class="material-icons" data-toggle="tooltip" title="View">&#xE417;</i></a> 
+								<a href="#editAttachmentModal" data-bind="click: $root.editAttachment" class="edit" data-toggle="modal"><i class="material-icons" data-toggle="tooltip" title="Edit">&#xE254;</i></a> 
+								<a href="#deleteAttachmentModal" data-bind="click: $root.removeAttachment" class="delete" data-toggle="modal"><i class="material-icons" data-toggle="tooltip" title="Delete">&#xE872;</i></a>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		</div>
+	</div>
+	<!-- Add Modal HTML -->
+	<div id="addAttachmentModal" class="modal fade">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<form data-bind="submit: addAttachment">
+					<div class="modal-header">
+						<h4 class="modal-title">Add Attachment</h4>
+						<button type="button" class="close" data-dismiss="modal"
+							aria-hidden="true">&times;</button>
+					</div>
+					<div class="modal-body">
+						<div class="form-group">
+							<label>File</label>
+							<!--input data-bind="value: newfilename" type="file" class="form-control" required-->
+							<label class="filelabel"> <i class="fa fa-paperclip">
+							</i> <span class="title"> Add an Attachment </span> <input
+								data-bind="value: newfilename" class="FileUpload1"
+								id="FileInput" name="booking_attachment" type="file" required />
+							</label>
+						</div>
+						<div class="form-group">
+							<label>Attachment Description</label>
+							<textarea data-bind="value: newdescription" class="form-control"
+								required></textarea>
+						</div>
+						<div class="form-group">
+							<label>Category</label>
+							<div class="select-wrapper">
+								<select class="select" required
+									data-bind="options: availableCategories,
+							         value: newcategory,
+							         optionsCaption: 'Choose Category',"></select>
+							</div>
+						</div>
+						<div class="form-group">
+							<label>Shared</label>
+							<div class="wrapper">
+								<input value="Yes" data-bind="checked: newshared" type="radio"
+									name="select" id="option-1"> <input value="No"
+									data-bind="checked: newshared" type="radio" name="select"
+									id="option-2" checked> <label for="option-1"
+									class="option option-1">
+									<div class="dot"></div> <span class="material-icons">check</span>
+								</label> <label for="option-2" class="option option-2">
+									<div class="dot"></div> <span class="material-icons">clear</span>
+								</label>
+							</div>
+						</div>
+						<div class="form-group">
+							<label>Checked Out By</label> <input
+								data-bind="value: newcheckedoutby" type="text"
+								class="form-control" required>
+						</div>
+						<div class="form-group">
+							<label>Revision</label> <input data-bind="value: newrevision"
+								type="number" class="form-control" required>
+						</div>
+					</div>
+					<div class="modal-footer">
+						<input type="button" class="btn btn-default" data-dismiss="modal"
+							value="Cancel">
+						<button type="submit" class="btn btn-success">Add</button>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+	<!-- Edit Modal HTML -->
+	<div id="editAttachmentModal" class="modal fade">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<form data-bind="submit: updateAttachment">
+					<div class="modal-header">
+						<h4 class="modal-title">Edit Attachment</h4>
+						<button type="button" class="close" data-dismiss="modal"
+							aria-hidden="true">&times;</button>
+					</div>
+					<div class="modal-body">
+						<div class="form-group">
+							<label>File</label> <input data-bind="fileInput: editfilename"
+								type="file" class="form-control" required>
+						</div>
+						<div class="form-group">
+							<label>Attachment Description</label>
+							<textarea data-bind="textInput: editdescription"
+								class="form-control" required></textarea>
+						</div>
+						<div class="form-group">
+							<label>Category</label>
+							<div class="select-wrapper">
+								<select class="select" required
+									data-bind="options: availableCategories,
+							         value: editcategory,
+							         optionsCaption: 'Choose Category',"></select>
+							</div>
+						</div>
+						<div class="form-group">
+							<label>Shared</label>
+							<div class="select-wrapper">
+								<select class="select" required
+									data-bind="options: availableSharedStatus,
+							         value: editshared,
+							         optionsCaption: 'Choose Shared Option',"></select>
+							</div>
+						</div>
+						<div class="form-group">
+							<label>Checked Out By</label> <input
+								data-bind="textInput: editcheckedoutby" type="text"
+								class="form-control" required>
+						</div>
+						<div class="form-group">
+							<label>Revision</label> <input
+								data-bind="textInput: editrevision" type="number"
+								class="form-control" required>
+						</div>
+					</div>
+					<div class="modal-footer">
+						<input type="button" class="btn btn-default" data-dismiss="modal"
+							value="Cancel">
+						<button type="submit" class="btn btn-info">Save</button>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+	<!-- Delete Modal HTML -->
+	<div id="deleteAttachmentModal" class="modal fade">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<form data-bind="submit: deleteAttachment">
+					<div class="modal-header">
+						<h4 class="modal-title">Delete Attachment</h4>
+						<button type="button" class="close" data-dismiss="modal"
+							aria-hidden="true">&times;</button>
+					</div>
+					<div class="modal-body">
+						<p>Are you sure you want to delete these Attachments?</p>
+						<p class="text-warning">
+							<small>This action cannot be undone.</small>
+						</p>
+					</div>
+					<div class="modal-footer">
+						<input type="button" class="btn btn-default" data-dismiss="modal"
+							value="Cancel">
+						<button type="submit" class="btn btn-danger">Delete</button>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+
+	<!-- ko if: errors().length == 0 && validationCompleted -->
+	<div id="success_message">Process completed successfully</div>
+	<!-- /ko -->
+	<p class="border">
+		<button data-bind="click: closeWindow" class="d-block mr-0 ml-auto">Close</button>
+	</p>
+</div>

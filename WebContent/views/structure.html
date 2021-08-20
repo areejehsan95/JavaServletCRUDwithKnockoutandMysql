@@ -1,0 +1,178 @@
+<div id="action_div_structure" class="col-md-10 col-md-offset-1">
+	<br /> <br /> <br /> <br />
+
+	<div class="table-title">
+		<div class="row">
+			<div class="col-sm-6">
+				<h2>
+					Item's <b>Structure</b>
+				</h2>
+			</div>
+			<div class="col-sm-6">
+				<a href="#addStructureModal" class="btn btn-success"
+					data-toggle="modal"><i class="material-icons">&#xE147;</i> <span>Add
+						New Structure</span></a> <a data-bind="click: backtoitems"
+					class="btn btn-danger" data-toggle="modal"><i
+					class="material-icons">reply</i> <span>Back to Items</span></a> <a
+					data-bind="click: onLoad" class="btn btn-primary"><i
+					class="material-icons">rotate_right</i> <span>Load Data</span></a>
+			</div>
+		</div>
+
+	</div>
+	<div class="container-xl">
+		<div class="table-responsive tableFixHead">
+			<div class="table-wrapper">
+
+				<table class="table table-striped table-hover">
+					<thead>
+						<tr>
+							<th>Item #</th>
+							<th>Structure <br>#</th>
+							<th>Class</th>
+							<th>Description</th>
+							<th>Life Cycle Phase</th>
+							<th>Created By</th>
+							<th>Actions</th>
+					</thead>
+					<tbody data-bind="foreach: structures">
+						<tr>
+							<td data-bind="text: sitemid"></td>
+							<td data-bind="text: sid"></td>
+							<td data-bind="text: Class"></td>
+							<td data-bind="text: description"></td>
+							<td data-bind="text: lifecyclephase"></td>
+							<td data-bind="text: createdby"></td>
+							<td><a href="#editStructureModal"
+								data-bind="click: $root.selectStructure" class="edit"
+								data-toggle="modal"><i class="material-icons"
+									data-toggle="tooltip" title="Edit">&#xE254;</i></a> <a
+								href="#deleteStructureModal"
+								data-bind="click: $root.selectStructure" class="delete"
+								data-toggle="modal"><i class="material-icons"
+									data-toggle="tooltip" title="Delete">&#xE872;</i></a></td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		</div>
+	</div>
+	<!-- Add Modal HTML -->
+	<div id="addStructureModal" class="modal fade">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<form data-bind="submit: addStructure">
+					<div class="modal-header">
+						<h4 class="modal-title">Add Structure</h4>
+						<button type="button" class="close" data-dismiss="modal"
+							aria-hidden="true">&times;</button>
+					</div>
+					<div class="modal-body">
+						<div class="form-group">
+							<label>Class</label> <input data-bind="value: newClass"
+								type="text" class="form-control" required>
+						</div>
+						<div class="form-group">
+							<label>Description</label>
+							<textarea data-bind="value: newdescription" class="form-control"
+								required></textarea>
+						</div>
+						<div class="form-group">
+							<label>Lifecycle Phase</label>
+							<div class="select-wrapper">
+								<select class="select" required
+									data-bind="options: availableLifecyclePhases,
+							         value: newlifecyclephase,
+							         optionsCaption: 'Choose LifecyclePhase',"></select>
+							</div>
+						</div>
+						<div class="form-group">
+							<label>Created By</label> <input data-bind="value: newcreatedby"
+								type="text" class="form-control" required>
+						</div>
+					</div>
+					<div class="modal-footer">
+						<input type="button" class="btn btn-default" data-dismiss="modal"
+							value="Cancel">
+						<button type="submit" class="btn btn-success">Add</button>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+	<!-- Edit Modal HTML -->
+	<div id="editStructureModal" class="modal fade">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<form data-bind="submit: updateStructure">
+					<div class="modal-header">
+						<h4 class="modal-title">Edit Structure</h4>
+						<button type="button" class="close" data-dismiss="modal"
+							aria-hidden="true">&times;</button>
+					</div>
+					<div class="modal-body">
+						<div class="form-group">
+							<label>Class</label> <input data-bind="value: editClass"
+								type="text" class="form-control" required>
+						</div>
+						<div class="form-group">
+							<label>Description</label>
+							<textarea data-bind="value: editdescription" class="form-control"
+								required></textarea>
+						</div>
+						<div class="form-group">
+							<label>Lifecycle Phase</label>
+							<div class="select-wrapper">
+								<select class="select" required
+									data-bind="options: availableLifecyclePhases,
+								         value: editlifecyclephase,
+							         optionsCaption: 'Choose LifecyclePhase',"></select>
+							</div>
+						</div>
+						<div class="form-group">
+							<label>Created By</label> <input data-bind="value: editcreatedby"
+								type="text" class="form-control" required>
+						</div>
+					</div>
+					<div class="modal-footer">
+						<input type="button" class="btn btn-default" data-dismiss="modal"
+							value="Cancel">
+						<button type="submit" class="btn btn-info">Save</button>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+	<!-- Delete Modal HTML -->
+	<div id="deleteStructureModal" class="modal fade">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<form data-bind="submit: deleteStructure">
+					<div class="modal-header">
+						<h4 class="modal-title">Delete Employee</h4>
+						<button type="button" class="close" data-dismiss="modal"
+							aria-hidden="true">&times;</button>
+					</div>
+					<div class="modal-body">
+						<p>Are you sure you want to delete these Structures?</p>
+						<p class="text-warning">
+							<small>This action cannot be undone.</small>
+						</p>
+					</div>
+					<div class="modal-footer">
+						<input type="button" class="btn btn-default" data-dismiss="modal"
+							value="Cancel">
+						<button type="submit" class="btn btn-danger">Delete</button>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+
+	<!-- ko if: errors().length == 0 && validationCompleted -->
+	<div id="success_message">Process completed successfully</div>
+	<!-- /ko -->
+	<p class="border">
+		<button data-bind="click: closeWindow" class="d-block mr-0 ml-auto">Close</button>
+	</p>
+</div>
