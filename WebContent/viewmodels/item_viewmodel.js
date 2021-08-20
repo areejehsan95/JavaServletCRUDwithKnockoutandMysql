@@ -14,7 +14,7 @@ define([ "binder" ], function(_binder) {
 		self.validationCompleted = ko.observable(false);
 
 		self.onLoad = function() {
-			var req = new Object();
+	/*		var req = new Object();
 			req.changeNotice = System.getParameterByName("changeNotice");
 			req.organization = System.getParameterByName("organization");
 			req.jwt = System.getParameterByName("jwt");
@@ -33,7 +33,7 @@ define([ "binder" ], function(_binder) {
 						message += response.message;
 					g_baseviewmodel.setFootNote("error", response.message);
 				}
-			}, "Loading Items...");
+			}, "Loading Items...");*/
 		};
 
 		self.closeWindow = function() {
@@ -158,7 +158,8 @@ define([ "binder" ], function(_binder) {
 			console.log(request);
 			
 			sessionStorage.setItem("SelectedId", self.SelectedItemId());
-			window.open("http://localhost:8080/TemplateProject/#attachments","_self")
+			window.open(window.location.protocol + "//" + window.location.host + "/" + window.location.pathname +"#attachments", "_self");
+			//window.open("http://localhost:8080/TemplateProject/#attachments","_self")
 		}
 		
 		self.showStructure = function(item) {
@@ -173,7 +174,7 @@ define([ "binder" ], function(_binder) {
 			console.log(request);
 			
 			sessionStorage.setItem("SelectedId", self.SelectedItemId());
-			window.open("http://localhost:8080/TemplateProject/#structure","_self")
+			window.open(window.location.protocol + "//" + window.location.host + "/" + window.location.pathname +"#structure", "_self");
 		}
 		
 		self.showAml = function(item) {
@@ -188,7 +189,7 @@ define([ "binder" ], function(_binder) {
 			console.log(request);
 			
 			sessionStorage.setItem("SelectedId", self.SelectedItemId());
-			window.open("http://localhost:8080/TemplateProject/#aml","_self")
+			window.open(window.location.protocol + "//" + window.location.host + "/" + window.location.pathname +"#aml", "_self");
 		}
 	}
 

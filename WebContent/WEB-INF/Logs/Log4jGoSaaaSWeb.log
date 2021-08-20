@@ -2162,3 +2162,235 @@ INFO    2021-08-17 11:37:41,553 [http-nio-8080-exec-8] io.gosaas.assessment.data
 INFO    2021-08-17 11:37:41,554 [http-nio-8080-exec-8] io.gosaas.assessment.databaseAccessObject.ItemDAO  - Executing Query :: select * from items
 INFO    2021-08-17 11:37:41,556 [http-nio-8080-exec-8] io.gosaas.assessment.web.ItemServlet  - Converting Response to JSON String [{"id":1,"Class":"Class01","description":"Description01"},{"id":2,"Class":"Class02","description":"Description02"},{"id":3,"Class":"Class03","description":"Description03"},{"id":4,"Class":"Class04","description":"Description04"},{"id":6,"Class":"Item Test Class","description":"Item Test Description"}]
 INFO    2021-08-17 11:37:41,556 [http-nio-8080-exec-8] io.gosaas.assessment.web.ItemServlet  - FINISHED 
+INFO    2021-08-17 17:37:34,625 [http-nio-8080-exec-1] io.gosaas.assessment.web.ItemServlet  - Started
+INFO    2021-08-17 17:37:34,626 [http-nio-8080-exec-1] io.gosaas.assessment.web.ItemServlet  - doGet() Triggered
+INFO    2021-08-17 17:37:34,626 [http-nio-8080-exec-1] io.gosaas.assessment.web.ItemServlet  - Displaying the existing items list
+INFO    2021-08-17 17:37:34,626 [http-nio-8080-exec-1] io.gosaas.assessment.databaseAccessObject.ItemDAO  - Establishing Connection
+INFO    2021-08-17 17:37:34,816 [http-nio-8080-exec-1] io.gosaas.assessment.databaseAccessObject.ItemDAO  - Connection Established Successfully
+INFO    2021-08-17 17:37:34,832 [http-nio-8080-exec-1] io.gosaas.assessment.databaseAccessObject.ItemDAO  - Executing Query :: select * from items
+INFO    2021-08-17 17:37:34,849 [http-nio-8080-exec-1] io.gosaas.assessment.web.ItemServlet  - Converting Response to JSON String [{"id":1,"Class":"Class01","description":"Description01"},{"id":2,"Class":"Class02","description":"Description02"},{"id":3,"Class":"Class03","description":"Description03"},{"id":4,"Class":"Class04","description":"Description04"},{"id":6,"Class":"Item Test Class","description":"Item Test Description"}]
+INFO    2021-08-17 17:37:34,850 [http-nio-8080-exec-1] io.gosaas.assessment.web.ItemServlet  - FINISHED 
+INFO    2021-08-17 17:37:40,975 [http-nio-8080-exec-16] io.gosaas.assessment.web.ItemServlet  - doGet() Triggered
+INFO    2021-08-17 17:37:40,977 [http-nio-8080-exec-16] io.gosaas.assessment.web.ItemServlet  - Displaying the existing items list
+INFO    2021-08-17 17:37:40,977 [http-nio-8080-exec-16] io.gosaas.assessment.databaseAccessObject.ItemDAO  - Establishing Connection
+INFO    2021-08-17 17:37:40,986 [http-nio-8080-exec-16] io.gosaas.assessment.databaseAccessObject.ItemDAO  - Connection Established Successfully
+INFO    2021-08-17 17:37:40,987 [http-nio-8080-exec-16] io.gosaas.assessment.databaseAccessObject.ItemDAO  - Executing Query :: select * from items
+INFO    2021-08-17 17:37:40,989 [http-nio-8080-exec-16] io.gosaas.assessment.web.ItemServlet  - Converting Response to JSON String [{"id":1,"Class":"Class01","description":"Description01"},{"id":2,"Class":"Class02","description":"Description02"},{"id":3,"Class":"Class03","description":"Description03"},{"id":4,"Class":"Class04","description":"Description04"},{"id":6,"Class":"Item Test Class","description":"Item Test Description"}]
+INFO    2021-08-17 17:37:40,989 [http-nio-8080-exec-16] io.gosaas.assessment.web.ItemServlet  - FINISHED 
+INFO    2021-08-17 17:37:55,981 [http-nio-8080-exec-15] io.gosaas.assessment.web.AttachmentServlet  - Started
+INFO    2021-08-17 17:37:55,982 [http-nio-8080-exec-15] io.gosaas.assessment.web.AttachmentServlet  - doGet() Triggered
+INFO    2021-08-17 17:37:55,982 [http-nio-8080-exec-15] io.gosaas.assessment.web.AttachmentServlet  - Searching for Attachments having Item ID 1
+INFO    2021-08-17 17:37:55,982 [http-nio-8080-exec-15] io.gosaas.assessment.databaseAccessObject.AttachmentDAO  - Establishing Connection
+INFO    2021-08-17 17:37:55,987 [http-nio-8080-exec-15] io.gosaas.assessment.databaseAccessObject.AttachmentDAO  - Connection Established Successfully
+INFO    2021-08-17 17:37:55,988 [http-nio-8080-exec-15] io.gosaas.assessment.databaseAccessObject.AttachmentDAO  - Executing Query :: select * from attachments where itemid=?
+INFO    2021-08-17 17:37:55,999 [http-nio-8080-exec-15] io.gosaas.assessment.web.AttachmentServlet  - Converting Response to JSON String [{"aid":1,"itemid":1,"filename":"C:\\fakepath\\me.jpeg","description":"Description01","category":"Category:  A","shared":"Yes","checkedoutby":"Areej","revision":1},{"aid":2,"itemid":1,"filename":"C:\\fakepath\\pic.jpeg","description":"Description02","category":"Category:  B","shared":"No","checkedoutby":"Areej","revision":1},{"aid":3,"itemid":1,"filename":"C:\\fakepath\\cnic.jpeg","description":"Description03","category":"Category:  C","shared":"No","checkedoutby":"Areej","revision":2}]
+INFO    2021-08-17 17:37:56,002 [http-nio-8080-exec-15] io.gosaas.assessment.web.AttachmentServlet  - FINISHED 
+INFO    2021-08-17 17:38:26,407 [http-nio-8080-exec-15] io.gosaas.assessment.web.ItemServlet  - doGet() Triggered
+INFO    2021-08-17 17:38:26,407 [http-nio-8080-exec-15] io.gosaas.assessment.web.ItemServlet  - Displaying the existing items list
+INFO    2021-08-17 17:38:26,407 [http-nio-8080-exec-15] io.gosaas.assessment.databaseAccessObject.ItemDAO  - Establishing Connection
+INFO    2021-08-17 17:38:26,416 [http-nio-8080-exec-15] io.gosaas.assessment.databaseAccessObject.ItemDAO  - Connection Established Successfully
+INFO    2021-08-17 17:38:26,418 [http-nio-8080-exec-15] io.gosaas.assessment.databaseAccessObject.ItemDAO  - Executing Query :: select * from items
+INFO    2021-08-17 17:38:26,420 [http-nio-8080-exec-15] io.gosaas.assessment.web.ItemServlet  - Converting Response to JSON String [{"id":1,"Class":"Class01","description":"Description01"},{"id":2,"Class":"Class02","description":"Description02"},{"id":3,"Class":"Class03","description":"Description03"},{"id":4,"Class":"Class04","description":"Description04"},{"id":6,"Class":"Item Test Class","description":"Item Test Description"}]
+INFO    2021-08-17 17:38:26,420 [http-nio-8080-exec-15] io.gosaas.assessment.web.ItemServlet  - FINISHED 
+INFO    2021-08-17 17:38:29,576 [http-nio-8080-exec-12] io.gosaas.assessment.web.ItemServlet  - doGet() Triggered
+INFO    2021-08-17 17:38:29,577 [http-nio-8080-exec-12] io.gosaas.assessment.web.ItemServlet  - Displaying the existing items list
+INFO    2021-08-17 17:38:29,577 [http-nio-8080-exec-12] io.gosaas.assessment.databaseAccessObject.ItemDAO  - Establishing Connection
+INFO    2021-08-17 17:38:29,586 [http-nio-8080-exec-12] io.gosaas.assessment.databaseAccessObject.ItemDAO  - Connection Established Successfully
+INFO    2021-08-17 17:38:29,587 [http-nio-8080-exec-12] io.gosaas.assessment.databaseAccessObject.ItemDAO  - Executing Query :: select * from items
+INFO    2021-08-17 17:38:29,588 [http-nio-8080-exec-12] io.gosaas.assessment.web.ItemServlet  - Converting Response to JSON String [{"id":1,"Class":"Class01","description":"Description01"},{"id":2,"Class":"Class02","description":"Description02"},{"id":3,"Class":"Class03","description":"Description03"},{"id":4,"Class":"Class04","description":"Description04"},{"id":6,"Class":"Item Test Class","description":"Item Test Description"}]
+INFO    2021-08-17 17:38:29,589 [http-nio-8080-exec-12] io.gosaas.assessment.web.ItemServlet  - FINISHED 
+INFO    2021-08-17 17:38:31,965 [http-nio-8080-exec-19] io.gosaas.assessment.web.StructureServlet  - Started
+INFO    2021-08-17 17:38:31,965 [http-nio-8080-exec-19] io.gosaas.assessment.web.StructureServlet  - doGet() Triggered
+INFO    2021-08-17 17:38:31,965 [http-nio-8080-exec-19] io.gosaas.assessment.web.StructureServlet  - Searching for Structures having Item ID 2
+INFO    2021-08-17 17:38:31,966 [http-nio-8080-exec-19] io.gosaas.assessment.databaseAccessObject.StructureDAO  - Establishing Connection
+INFO    2021-08-17 17:38:31,971 [http-nio-8080-exec-19] io.gosaas.assessment.databaseAccessObject.StructureDAO  - Connection Established Successfully
+INFO    2021-08-17 17:38:31,972 [http-nio-8080-exec-19] io.gosaas.assessment.databaseAccessObject.StructureDAO  - Executing Query :: select * from structures where sitemid=?
+INFO    2021-08-17 17:38:31,973 [http-nio-8080-exec-19] io.gosaas.assessment.web.StructureServlet  - Converting Response to JSON String []
+INFO    2021-08-17 17:38:31,974 [http-nio-8080-exec-19] io.gosaas.assessment.web.StructureServlet  - FINISHED 
+INFO    2021-08-17 17:38:34,001 [http-nio-8080-exec-14] io.gosaas.assessment.web.ItemServlet  - doGet() Triggered
+INFO    2021-08-17 17:38:34,002 [http-nio-8080-exec-14] io.gosaas.assessment.web.ItemServlet  - Displaying the existing items list
+INFO    2021-08-17 17:38:34,002 [http-nio-8080-exec-14] io.gosaas.assessment.databaseAccessObject.ItemDAO  - Establishing Connection
+INFO    2021-08-17 17:38:34,007 [http-nio-8080-exec-14] io.gosaas.assessment.databaseAccessObject.ItemDAO  - Connection Established Successfully
+INFO    2021-08-17 17:38:34,008 [http-nio-8080-exec-14] io.gosaas.assessment.databaseAccessObject.ItemDAO  - Executing Query :: select * from items
+INFO    2021-08-17 17:38:34,017 [http-nio-8080-exec-14] io.gosaas.assessment.web.ItemServlet  - Converting Response to JSON String [{"id":1,"Class":"Class01","description":"Description01"},{"id":2,"Class":"Class02","description":"Description02"},{"id":3,"Class":"Class03","description":"Description03"},{"id":4,"Class":"Class04","description":"Description04"},{"id":6,"Class":"Item Test Class","description":"Item Test Description"}]
+INFO    2021-08-17 17:38:34,018 [http-nio-8080-exec-14] io.gosaas.assessment.web.ItemServlet  - FINISHED 
+INFO    2021-08-17 17:38:35,681 [http-nio-8080-exec-16] io.gosaas.assessment.web.StructureServlet  - doGet() Triggered
+INFO    2021-08-17 17:38:35,682 [http-nio-8080-exec-16] io.gosaas.assessment.web.StructureServlet  - Searching for Structures having Item ID 1
+INFO    2021-08-17 17:38:35,682 [http-nio-8080-exec-16] io.gosaas.assessment.databaseAccessObject.StructureDAO  - Establishing Connection
+INFO    2021-08-17 17:38:35,690 [http-nio-8080-exec-16] io.gosaas.assessment.databaseAccessObject.StructureDAO  - Connection Established Successfully
+INFO    2021-08-17 17:38:35,690 [http-nio-8080-exec-16] io.gosaas.assessment.databaseAccessObject.StructureDAO  - Executing Query :: select * from structures where sitemid=?
+INFO    2021-08-17 17:38:35,698 [http-nio-8080-exec-16] io.gosaas.assessment.web.StructureServlet  - Converting Response to JSON String [{"sid":1,"sitemid":1,"description":"Description01","Class":"Class01","lifecyclephase":"Initial","createdby":"Areej"},{"sid":2,"sitemid":1,"description":"Description02","Class":"Class02","lifecyclephase":"DEvelopment","createdby":"Areej"},{"sid":4,"sitemid":1,"description":"Description04","Class":"Class04","lifecyclephase":"Completion","createdby":"Areej"},{"sid":5,"sitemid":1,"description":"Description05","Class":"Class05","lifecyclephase":"Initial","createdby":"Areej"},{"sid":6,"sitemid":1,"description":"Description06","Class":"Class06","lifecyclephase":"DEvelopment","createdby":"Areej"},{"sid":7,"sitemid":1,"description":"DescriptionABC","Class":"ClassABC","lifecyclephase":"Completion","createdby":"Nimra"}]
+INFO    2021-08-17 17:38:35,699 [http-nio-8080-exec-16] io.gosaas.assessment.web.StructureServlet  - FINISHED 
+INFO    2021-08-17 17:38:37,624 [http-nio-8080-exec-18] io.gosaas.assessment.web.ItemServlet  - doGet() Triggered
+INFO    2021-08-17 17:38:37,625 [http-nio-8080-exec-18] io.gosaas.assessment.web.ItemServlet  - Displaying the existing items list
+INFO    2021-08-17 17:38:37,626 [http-nio-8080-exec-18] io.gosaas.assessment.databaseAccessObject.ItemDAO  - Establishing Connection
+INFO    2021-08-17 17:38:37,630 [http-nio-8080-exec-18] io.gosaas.assessment.databaseAccessObject.ItemDAO  - Connection Established Successfully
+INFO    2021-08-17 17:38:37,630 [http-nio-8080-exec-18] io.gosaas.assessment.databaseAccessObject.ItemDAO  - Executing Query :: select * from items
+INFO    2021-08-17 17:38:37,632 [http-nio-8080-exec-18] io.gosaas.assessment.web.ItemServlet  - Converting Response to JSON String [{"id":1,"Class":"Class01","description":"Description01"},{"id":2,"Class":"Class02","description":"Description02"},{"id":3,"Class":"Class03","description":"Description03"},{"id":4,"Class":"Class04","description":"Description04"},{"id":6,"Class":"Item Test Class","description":"Item Test Description"}]
+INFO    2021-08-17 17:38:37,632 [http-nio-8080-exec-18] io.gosaas.assessment.web.ItemServlet  - FINISHED 
+INFO    2021-08-17 17:38:39,355 [http-nio-8080-exec-17] io.gosaas.assessment.web.AMLServlet  - Started
+INFO    2021-08-17 17:38:39,356 [http-nio-8080-exec-17] io.gosaas.assessment.web.AMLServlet  - doGet() Triggered
+INFO    2021-08-17 17:38:39,356 [http-nio-8080-exec-17] io.gosaas.assessment.web.AMLServlet  - Searching for AMLs having Item ID 1
+INFO    2021-08-17 17:38:39,356 [http-nio-8080-exec-17] io.gosaas.assessment.databaseAccessObject.AMLDAO  - Establishing Connection
+INFO    2021-08-17 17:38:39,364 [http-nio-8080-exec-17] io.gosaas.assessment.databaseAccessObject.AMLDAO  - Connection Established Successfully
+INFO    2021-08-17 17:38:39,364 [http-nio-8080-exec-17] io.gosaas.assessment.databaseAccessObject.AMLDAO  - Executing Query :: select * from aml where mitemid=?
+INFO    2021-08-17 17:38:39,371 [http-nio-8080-exec-17] io.gosaas.assessment.web.AMLServlet  - Converting Response to JSON String [{"mid":1,"mitemid":1,"mpart":"ABC","manufacturer":"ABC","registryid":1,"amlstatus":"Active","description":"ABC","mstatus":"Active"}]
+INFO    2021-08-17 17:38:39,372 [http-nio-8080-exec-17] io.gosaas.assessment.web.AMLServlet  - FINISHED 
+INFO    2021-08-17 17:38:42,479 [http-nio-8080-exec-19] io.gosaas.assessment.web.ItemServlet  - doGet() Triggered
+INFO    2021-08-17 17:38:42,479 [http-nio-8080-exec-19] io.gosaas.assessment.web.ItemServlet  - Displaying the existing items list
+INFO    2021-08-17 17:38:42,479 [http-nio-8080-exec-19] io.gosaas.assessment.databaseAccessObject.ItemDAO  - Establishing Connection
+INFO    2021-08-17 17:38:42,486 [http-nio-8080-exec-19] io.gosaas.assessment.databaseAccessObject.ItemDAO  - Connection Established Successfully
+INFO    2021-08-17 17:38:42,486 [http-nio-8080-exec-19] io.gosaas.assessment.databaseAccessObject.ItemDAO  - Executing Query :: select * from items
+INFO    2021-08-17 17:38:42,488 [http-nio-8080-exec-19] io.gosaas.assessment.web.ItemServlet  - Converting Response to JSON String [{"id":1,"Class":"Class01","description":"Description01"},{"id":2,"Class":"Class02","description":"Description02"},{"id":3,"Class":"Class03","description":"Description03"},{"id":4,"Class":"Class04","description":"Description04"},{"id":6,"Class":"Item Test Class","description":"Item Test Description"}]
+INFO    2021-08-17 17:38:42,488 [http-nio-8080-exec-19] io.gosaas.assessment.web.ItemServlet  - FINISHED 
+INFO    2021-08-17 17:41:36,114 [http-nio-8080-exec-16] io.gosaas.assessment.web.ItemServlet  - doGet() Triggered
+INFO    2021-08-17 17:41:36,114 [http-nio-8080-exec-16] io.gosaas.assessment.web.ItemServlet  - Displaying the existing items list
+INFO    2021-08-17 17:41:36,114 [http-nio-8080-exec-16] io.gosaas.assessment.databaseAccessObject.ItemDAO  - Establishing Connection
+INFO    2021-08-17 17:41:36,119 [http-nio-8080-exec-16] io.gosaas.assessment.databaseAccessObject.ItemDAO  - Connection Established Successfully
+INFO    2021-08-17 17:41:36,119 [http-nio-8080-exec-16] io.gosaas.assessment.databaseAccessObject.ItemDAO  - Executing Query :: select * from items
+INFO    2021-08-17 17:41:36,121 [http-nio-8080-exec-16] io.gosaas.assessment.web.ItemServlet  - Converting Response to JSON String [{"id":1,"Class":"Class01","description":"Description01"},{"id":2,"Class":"Class02","description":"Description02"},{"id":3,"Class":"Class03","description":"Description03"},{"id":4,"Class":"Class04","description":"Description04"},{"id":6,"Class":"Item Test Class","description":"Item Test Description"}]
+INFO    2021-08-17 17:41:36,122 [http-nio-8080-exec-16] io.gosaas.assessment.web.ItemServlet  - FINISHED 
+INFO    2021-08-17 17:41:38,303 [http-nio-8080-exec-15] io.gosaas.assessment.web.ItemServlet  - doGet() Triggered
+INFO    2021-08-17 17:41:38,303 [http-nio-8080-exec-15] io.gosaas.assessment.web.ItemServlet  - Displaying the existing items list
+INFO    2021-08-17 17:41:38,303 [http-nio-8080-exec-15] io.gosaas.assessment.databaseAccessObject.ItemDAO  - Establishing Connection
+INFO    2021-08-17 17:41:38,308 [http-nio-8080-exec-15] io.gosaas.assessment.databaseAccessObject.ItemDAO  - Connection Established Successfully
+INFO    2021-08-17 17:41:38,309 [http-nio-8080-exec-15] io.gosaas.assessment.databaseAccessObject.ItemDAO  - Executing Query :: select * from items
+INFO    2021-08-17 17:41:38,311 [http-nio-8080-exec-15] io.gosaas.assessment.web.ItemServlet  - Converting Response to JSON String [{"id":1,"Class":"Class01","description":"Description01"},{"id":2,"Class":"Class02","description":"Description02"},{"id":3,"Class":"Class03","description":"Description03"},{"id":4,"Class":"Class04","description":"Description04"},{"id":6,"Class":"Item Test Class","description":"Item Test Description"}]
+INFO    2021-08-17 17:41:38,311 [http-nio-8080-exec-15] io.gosaas.assessment.web.ItemServlet  - FINISHED 
+INFO    2021-08-17 17:41:45,988 [http-nio-8080-exec-17] io.gosaas.assessment.web.ItemServlet  - doPost() Triggered
+INFO    2021-08-17 17:41:46,012 [http-nio-8080-exec-17] io.gosaas.assessment.databaseAccessObject.ItemDAO  - Establishing Connection
+INFO    2021-08-17 17:41:46,023 [http-nio-8080-exec-17] io.gosaas.assessment.databaseAccessObject.ItemDAO  - Connection Established Successfully
+INFO    2021-08-17 17:41:46,035 [http-nio-8080-exec-17] io.gosaas.assessment.databaseAccessObject.ItemDAO  - Executing Query :: INSERT INTO items (class,description) VALUES (?,?);
+INFO    2021-08-17 17:42:34,451 [http-nio-8080-exec-12] io.gosaas.assessment.web.ItemServlet  - doGet() Triggered
+INFO    2021-08-17 17:42:34,451 [http-nio-8080-exec-12] io.gosaas.assessment.web.ItemServlet  - Displaying the existing items list
+INFO    2021-08-17 17:42:34,451 [http-nio-8080-exec-12] io.gosaas.assessment.databaseAccessObject.ItemDAO  - Establishing Connection
+INFO    2021-08-17 17:42:34,455 [http-nio-8080-exec-12] io.gosaas.assessment.databaseAccessObject.ItemDAO  - Connection Established Successfully
+INFO    2021-08-17 17:42:34,455 [http-nio-8080-exec-12] io.gosaas.assessment.databaseAccessObject.ItemDAO  - Executing Query :: select * from items
+INFO    2021-08-17 17:42:34,457 [http-nio-8080-exec-12] io.gosaas.assessment.web.ItemServlet  - Converting Response to JSON String [{"id":1,"Class":"Class01","description":"Description01"},{"id":2,"Class":"Class02","description":"Description02"},{"id":3,"Class":"Class03","description":"Description03"},{"id":4,"Class":"Class04","description":"Description04"},{"id":6,"Class":"Item Test Class","description":"Item Test Description"},{"id":8,"Class":"new","description":"new"}]
+INFO    2021-08-17 17:42:34,458 [http-nio-8080-exec-12] io.gosaas.assessment.web.ItemServlet  - FINISHED 
+INFO    2021-08-17 17:42:46,751 [http-nio-8080-exec-16] io.gosaas.assessment.web.ItemServlet  - doPost() Triggered
+INFO    2021-08-17 17:42:46,752 [http-nio-8080-exec-16] io.gosaas.assessment.databaseAccessObject.ItemDAO  - Establishing Connection
+INFO    2021-08-17 17:42:46,764 [http-nio-8080-exec-16] io.gosaas.assessment.databaseAccessObject.ItemDAO  - Connection Established Successfully
+INFO    2021-08-17 17:42:46,783 [http-nio-8080-exec-16] io.gosaas.assessment.databaseAccessObject.ItemDAO  - Executing Query :: INSERT INTO items (class,description) VALUES (?,?);
+INFO    2021-08-17 17:42:54,619 [http-nio-8080-exec-18] io.gosaas.assessment.web.ItemServlet  - doGet() Triggered
+INFO    2021-08-17 17:42:54,619 [http-nio-8080-exec-18] io.gosaas.assessment.web.ItemServlet  - Displaying the existing items list
+INFO    2021-08-17 17:42:54,619 [http-nio-8080-exec-18] io.gosaas.assessment.databaseAccessObject.ItemDAO  - Establishing Connection
+INFO    2021-08-17 17:42:54,623 [http-nio-8080-exec-18] io.gosaas.assessment.databaseAccessObject.ItemDAO  - Connection Established Successfully
+INFO    2021-08-17 17:42:54,623 [http-nio-8080-exec-18] io.gosaas.assessment.databaseAccessObject.ItemDAO  - Executing Query :: select * from items
+INFO    2021-08-17 17:42:54,625 [http-nio-8080-exec-18] io.gosaas.assessment.web.ItemServlet  - Converting Response to JSON String [{"id":1,"Class":"Class01","description":"Description01"},{"id":2,"Class":"Class02","description":"Description02"},{"id":3,"Class":"Class03","description":"Description03"},{"id":4,"Class":"Class04","description":"Description04"},{"id":6,"Class":"Item Test Class","description":"Item Test Description"},{"id":8,"Class":"new","description":"new"},{"id":9,"Class":"new01","description":"new01\n"}]
+INFO    2021-08-17 17:42:54,626 [http-nio-8080-exec-18] io.gosaas.assessment.web.ItemServlet  - FINISHED 
+INFO    2021-08-17 17:43:55,085 [http-nio-8080-exec-12] io.gosaas.assessment.web.ItemServlet  - doPost() Triggered
+INFO    2021-08-17 17:43:55,087 [http-nio-8080-exec-12] io.gosaas.assessment.databaseAccessObject.ItemDAO  - Establishing Connection
+INFO    2021-08-17 17:43:55,092 [http-nio-8080-exec-12] io.gosaas.assessment.databaseAccessObject.ItemDAO  - Connection Established Successfully
+INFO    2021-08-17 17:43:55,101 [http-nio-8080-exec-12] io.gosaas.assessment.databaseAccessObject.ItemDAO  - Executing Query :: INSERT INTO items (class,description) VALUES (?,?);
+INFO    2021-08-17 17:44:03,129 [http-nio-8080-exec-17] io.gosaas.assessment.web.ItemServlet  - doGet() Triggered
+INFO    2021-08-17 17:44:03,129 [http-nio-8080-exec-17] io.gosaas.assessment.web.ItemServlet  - Displaying the existing items list
+INFO    2021-08-17 17:44:03,129 [http-nio-8080-exec-17] io.gosaas.assessment.databaseAccessObject.ItemDAO  - Establishing Connection
+INFO    2021-08-17 17:44:03,137 [http-nio-8080-exec-17] io.gosaas.assessment.databaseAccessObject.ItemDAO  - Connection Established Successfully
+INFO    2021-08-17 17:44:03,137 [http-nio-8080-exec-17] io.gosaas.assessment.databaseAccessObject.ItemDAO  - Executing Query :: select * from items
+INFO    2021-08-17 17:44:03,139 [http-nio-8080-exec-17] io.gosaas.assessment.web.ItemServlet  - Converting Response to JSON String [{"id":1,"Class":"Class01","description":"Description01"},{"id":2,"Class":"Class02","description":"Description02"},{"id":3,"Class":"Class03","description":"Description03"},{"id":4,"Class":"Class04","description":"Description04"},{"id":6,"Class":"Item Test Class","description":"Item Test Description"},{"id":8,"Class":"new","description":"new"},{"id":9,"Class":"new01","description":"new01\n"},{"id":10,"Class":"test","description":"test\n"}]
+INFO    2021-08-17 17:44:03,140 [http-nio-8080-exec-17] io.gosaas.assessment.web.ItemServlet  - FINISHED 
+INFO    2021-08-17 17:44:29,286 [http-nio-8080-exec-11] io.gosaas.assessment.web.ItemServlet  - doGet() Triggered
+INFO    2021-08-17 17:44:29,287 [http-nio-8080-exec-11] io.gosaas.assessment.web.ItemServlet  - Displaying the existing items list
+INFO    2021-08-17 17:44:29,287 [http-nio-8080-exec-11] io.gosaas.assessment.databaseAccessObject.ItemDAO  - Establishing Connection
+INFO    2021-08-17 17:44:29,291 [http-nio-8080-exec-11] io.gosaas.assessment.databaseAccessObject.ItemDAO  - Connection Established Successfully
+INFO    2021-08-17 17:44:29,292 [http-nio-8080-exec-11] io.gosaas.assessment.databaseAccessObject.ItemDAO  - Executing Query :: select * from items
+INFO    2021-08-17 17:44:29,293 [http-nio-8080-exec-11] io.gosaas.assessment.web.ItemServlet  - Converting Response to JSON String [{"id":1,"Class":"Class01","description":"Description01"},{"id":2,"Class":"Class02","description":"Description02"},{"id":3,"Class":"Class03","description":"Description03"},{"id":4,"Class":"Class04","description":"Description04"},{"id":6,"Class":"Item Test Class","description":"Item Test Description"},{"id":8,"Class":"new","description":"new"},{"id":9,"Class":"new01","description":"new01\n"},{"id":10,"Class":"test","description":"test\n"}]
+INFO    2021-08-17 17:44:29,295 [http-nio-8080-exec-11] io.gosaas.assessment.web.ItemServlet  - FINISHED 
+INFO    2021-08-17 17:44:35,688 [http-nio-8080-exec-14] io.gosaas.assessment.web.ItemServlet  - doPut() Triggered
+INFO    2021-08-17 17:44:35,691 [http-nio-8080-exec-14] io.gosaas.assessment.web.ItemServlet  - Updating Item with ID 10
+INFO    2021-08-17 17:44:35,691 [http-nio-8080-exec-14] io.gosaas.assessment.databaseAccessObject.ItemDAO  - Establishing Connection
+INFO    2021-08-17 17:44:35,699 [http-nio-8080-exec-14] io.gosaas.assessment.databaseAccessObject.ItemDAO  - Connection Established Successfully
+INFO    2021-08-17 17:44:35,707 [http-nio-8080-exec-14] io.gosaas.assessment.databaseAccessObject.ItemDAO  - Executing Query :: update items set class=?,description=? where id=?;
+INFO    2021-08-17 17:44:35,708 [http-nio-8080-exec-14] io.gosaas.assessment.web.ItemServlet  - doGet() Triggered
+INFO    2021-08-17 17:44:35,708 [http-nio-8080-exec-14] io.gosaas.assessment.web.ItemServlet  - Displaying the existing items list
+INFO    2021-08-17 17:44:35,708 [http-nio-8080-exec-14] io.gosaas.assessment.databaseAccessObject.ItemDAO  - Establishing Connection
+INFO    2021-08-17 17:44:35,712 [http-nio-8080-exec-14] io.gosaas.assessment.databaseAccessObject.ItemDAO  - Connection Established Successfully
+INFO    2021-08-17 17:44:35,713 [http-nio-8080-exec-14] io.gosaas.assessment.databaseAccessObject.ItemDAO  - Executing Query :: select * from items
+INFO    2021-08-17 17:44:35,714 [http-nio-8080-exec-14] io.gosaas.assessment.web.ItemServlet  - Converting Response to JSON String [{"id":1,"Class":"Class01","description":"Description01"},{"id":2,"Class":"Class02","description":"Description02"},{"id":3,"Class":"Class03","description":"Description03"},{"id":4,"Class":"Class04","description":"Description04"},{"id":6,"Class":"Item Test Class","description":"Item Test Description"},{"id":8,"Class":"new","description":"new"},{"id":9,"Class":"new01","description":"new01\n"},{"id":10,"Class":"test","description":"testupdated\n"}]
+INFO    2021-08-17 17:44:35,715 [http-nio-8080-exec-14] io.gosaas.assessment.web.ItemServlet  - FINISHED 
+INFO    2021-08-17 17:44:42,584 [http-nio-8080-exec-19] io.gosaas.assessment.web.ItemServlet  - doGet() Triggered
+INFO    2021-08-17 17:44:42,584 [http-nio-8080-exec-19] io.gosaas.assessment.web.ItemServlet  - Displaying the existing items list
+INFO    2021-08-17 17:44:42,584 [http-nio-8080-exec-19] io.gosaas.assessment.databaseAccessObject.ItemDAO  - Establishing Connection
+INFO    2021-08-17 17:44:42,589 [http-nio-8080-exec-19] io.gosaas.assessment.databaseAccessObject.ItemDAO  - Connection Established Successfully
+INFO    2021-08-17 17:44:42,589 [http-nio-8080-exec-19] io.gosaas.assessment.databaseAccessObject.ItemDAO  - Executing Query :: select * from items
+INFO    2021-08-17 17:44:42,592 [http-nio-8080-exec-19] io.gosaas.assessment.web.ItemServlet  - Converting Response to JSON String [{"id":1,"Class":"Class01","description":"Description01"},{"id":2,"Class":"Class02","description":"Description02"},{"id":3,"Class":"Class03","description":"Description03"},{"id":4,"Class":"Class04","description":"Description04"},{"id":6,"Class":"Item Test Class","description":"Item Test Description"},{"id":8,"Class":"new","description":"new"},{"id":9,"Class":"new01","description":"new01\n"},{"id":10,"Class":"test","description":"testupdated\n"}]
+INFO    2021-08-17 17:44:42,592 [http-nio-8080-exec-19] io.gosaas.assessment.web.ItemServlet  - FINISHED 
+INFO    2021-08-17 17:45:18,904 [http-nio-8080-exec-11] io.gosaas.assessment.web.ItemServlet  - doPost() Triggered
+INFO    2021-08-17 17:45:18,905 [http-nio-8080-exec-11] io.gosaas.assessment.databaseAccessObject.ItemDAO  - Establishing Connection
+INFO    2021-08-17 17:45:18,909 [http-nio-8080-exec-11] io.gosaas.assessment.databaseAccessObject.ItemDAO  - Connection Established Successfully
+INFO    2021-08-17 17:45:18,916 [http-nio-8080-exec-11] io.gosaas.assessment.databaseAccessObject.ItemDAO  - Executing Query :: INSERT INTO items (class,description) VALUES (?,?);
+INFO    2021-08-17 17:46:32,707 [http-nio-8080-exec-19] io.gosaas.assessment.web.ItemServlet  - doGet() Triggered
+INFO    2021-08-17 17:46:32,708 [http-nio-8080-exec-19] io.gosaas.assessment.web.ItemServlet  - Displaying the existing items list
+INFO    2021-08-17 17:46:32,708 [http-nio-8080-exec-19] io.gosaas.assessment.databaseAccessObject.ItemDAO  - Establishing Connection
+INFO    2021-08-17 17:46:32,712 [http-nio-8080-exec-19] io.gosaas.assessment.databaseAccessObject.ItemDAO  - Connection Established Successfully
+INFO    2021-08-17 17:46:32,712 [http-nio-8080-exec-19] io.gosaas.assessment.databaseAccessObject.ItemDAO  - Executing Query :: select * from items
+INFO    2021-08-17 17:46:32,714 [http-nio-8080-exec-19] io.gosaas.assessment.web.ItemServlet  - Converting Response to JSON String [{"id":1,"Class":"Class01","description":"Description01"},{"id":2,"Class":"Class02","description":"Description02"},{"id":3,"Class":"Class03","description":"Description03"},{"id":4,"Class":"Class04","description":"Description04"},{"id":6,"Class":"Item Test Class","description":"Item Test Description"},{"id":8,"Class":"new","description":"new"},{"id":9,"Class":"new01","description":"new01\n"},{"id":10,"Class":"test","description":"testupdated\n"},{"id":11,"Class":"new","description":"new"}]
+INFO    2021-08-17 17:46:32,715 [http-nio-8080-exec-19] io.gosaas.assessment.web.ItemServlet  - FINISHED 
+INFO    2021-08-17 17:46:41,400 [http-nio-8080-exec-15] io.gosaas.assessment.web.ItemServlet  - doPost() Triggered
+INFO    2021-08-17 17:46:41,403 [http-nio-8080-exec-15] io.gosaas.assessment.databaseAccessObject.ItemDAO  - Establishing Connection
+INFO    2021-08-17 17:46:41,410 [http-nio-8080-exec-13] io.gosaas.assessment.web.ItemServlet  - doGet() Triggered
+INFO    2021-08-17 17:46:41,413 [http-nio-8080-exec-13] io.gosaas.assessment.web.ItemServlet  - Displaying the existing items list
+INFO    2021-08-17 17:46:41,413 [http-nio-8080-exec-13] io.gosaas.assessment.databaseAccessObject.ItemDAO  - Establishing Connection
+INFO    2021-08-17 17:46:41,419 [http-nio-8080-exec-13] io.gosaas.assessment.databaseAccessObject.ItemDAO  - Connection Established Successfully
+INFO    2021-08-17 17:46:41,419 [http-nio-8080-exec-13] io.gosaas.assessment.databaseAccessObject.ItemDAO  - Executing Query :: select * from items
+INFO    2021-08-17 17:46:41,420 [http-nio-8080-exec-15] io.gosaas.assessment.databaseAccessObject.ItemDAO  - Connection Established Successfully
+INFO    2021-08-17 17:46:41,422 [http-nio-8080-exec-13] io.gosaas.assessment.web.ItemServlet  - Converting Response to JSON String [{"id":1,"Class":"Class01","description":"Description01"},{"id":2,"Class":"Class02","description":"Description02"},{"id":3,"Class":"Class03","description":"Description03"},{"id":4,"Class":"Class04","description":"Description04"},{"id":6,"Class":"Item Test Class","description":"Item Test Description"},{"id":8,"Class":"new","description":"new"},{"id":9,"Class":"new01","description":"new01\n"},{"id":10,"Class":"test","description":"testupdated\n"},{"id":11,"Class":"new","description":"new"}]
+INFO    2021-08-17 17:46:41,422 [http-nio-8080-exec-13] io.gosaas.assessment.web.ItemServlet  - FINISHED 
+INFO    2021-08-17 17:46:41,428 [http-nio-8080-exec-15] io.gosaas.assessment.databaseAccessObject.ItemDAO  - Executing Query :: INSERT INTO items (class,description) VALUES (?,?);
+INFO    2021-08-17 17:46:47,904 [http-nio-8080-exec-12] io.gosaas.assessment.web.ItemServlet  - doGet() Triggered
+INFO    2021-08-17 17:46:47,905 [http-nio-8080-exec-12] io.gosaas.assessment.web.ItemServlet  - Displaying the existing items list
+INFO    2021-08-17 17:46:47,905 [http-nio-8080-exec-12] io.gosaas.assessment.databaseAccessObject.ItemDAO  - Establishing Connection
+INFO    2021-08-17 17:46:47,911 [http-nio-8080-exec-12] io.gosaas.assessment.databaseAccessObject.ItemDAO  - Connection Established Successfully
+INFO    2021-08-17 17:46:47,912 [http-nio-8080-exec-12] io.gosaas.assessment.databaseAccessObject.ItemDAO  - Executing Query :: select * from items
+INFO    2021-08-17 17:46:47,918 [http-nio-8080-exec-12] io.gosaas.assessment.web.ItemServlet  - Converting Response to JSON String [{"id":1,"Class":"Class01","description":"Description01"},{"id":2,"Class":"Class02","description":"Description02"},{"id":3,"Class":"Class03","description":"Description03"},{"id":4,"Class":"Class04","description":"Description04"},{"id":6,"Class":"Item Test Class","description":"Item Test Description"},{"id":8,"Class":"new","description":"new"},{"id":9,"Class":"new01","description":"new01\n"},{"id":10,"Class":"test","description":"testupdated\n"},{"id":11,"Class":"new","description":"new"},{"id":12,"Class":"test","description":"test"}]
+INFO    2021-08-17 17:46:47,918 [http-nio-8080-exec-12] io.gosaas.assessment.web.ItemServlet  - FINISHED 
+INFO    2021-08-17 17:47:14,591 [http-nio-8080-exec-20] io.gosaas.assessment.web.ItemServlet  - doGet() Triggered
+INFO    2021-08-17 17:47:14,592 [http-nio-8080-exec-20] io.gosaas.assessment.web.ItemServlet  - Displaying the existing items list
+INFO    2021-08-17 17:47:14,592 [http-nio-8080-exec-20] io.gosaas.assessment.databaseAccessObject.ItemDAO  - Establishing Connection
+INFO    2021-08-17 17:47:14,598 [http-nio-8080-exec-20] io.gosaas.assessment.databaseAccessObject.ItemDAO  - Connection Established Successfully
+INFO    2021-08-17 17:47:14,598 [http-nio-8080-exec-20] io.gosaas.assessment.databaseAccessObject.ItemDAO  - Executing Query :: select * from items
+INFO    2021-08-17 17:47:14,600 [http-nio-8080-exec-20] io.gosaas.assessment.web.ItemServlet  - Converting Response to JSON String [{"id":1,"Class":"Class01","description":"Description01"},{"id":2,"Class":"Class02","description":"Description02"},{"id":3,"Class":"Class03","description":"Description03"},{"id":4,"Class":"Class04","description":"Description04"},{"id":6,"Class":"Item Test Class","description":"Item Test Description"},{"id":8,"Class":"new","description":"new"},{"id":9,"Class":"new01","description":"new01\n"},{"id":10,"Class":"test","description":"testupdated\n"},{"id":11,"Class":"new","description":"new"},{"id":12,"Class":"test","description":"test"}]
+INFO    2021-08-17 17:47:14,601 [http-nio-8080-exec-20] io.gosaas.assessment.web.ItemServlet  - FINISHED 
+INFO    2021-08-17 17:47:16,163 [http-nio-8080-exec-14] io.gosaas.assessment.web.StructureServlet  - doGet() Triggered
+INFO    2021-08-17 17:47:16,163 [http-nio-8080-exec-14] io.gosaas.assessment.web.StructureServlet  - Searching for Structures having Item ID 1
+INFO    2021-08-17 17:47:16,163 [http-nio-8080-exec-14] io.gosaas.assessment.databaseAccessObject.StructureDAO  - Establishing Connection
+INFO    2021-08-17 17:47:16,174 [http-nio-8080-exec-14] io.gosaas.assessment.databaseAccessObject.StructureDAO  - Connection Established Successfully
+INFO    2021-08-17 17:47:16,174 [http-nio-8080-exec-14] io.gosaas.assessment.databaseAccessObject.StructureDAO  - Executing Query :: select * from structures where sitemid=?
+INFO    2021-08-17 17:47:16,176 [http-nio-8080-exec-14] io.gosaas.assessment.web.StructureServlet  - Converting Response to JSON String [{"sid":1,"sitemid":1,"description":"Description01","Class":"Class01","lifecyclephase":"Initial","createdby":"Areej"},{"sid":2,"sitemid":1,"description":"Description02","Class":"Class02","lifecyclephase":"DEvelopment","createdby":"Areej"},{"sid":4,"sitemid":1,"description":"Description04","Class":"Class04","lifecyclephase":"Completion","createdby":"Areej"},{"sid":5,"sitemid":1,"description":"Description05","Class":"Class05","lifecyclephase":"Initial","createdby":"Areej"},{"sid":6,"sitemid":1,"description":"Description06","Class":"Class06","lifecyclephase":"DEvelopment","createdby":"Areej"},{"sid":7,"sitemid":1,"description":"DescriptionABC","Class":"ClassABC","lifecyclephase":"Completion","createdby":"Nimra"}]
+INFO    2021-08-17 17:47:16,177 [http-nio-8080-exec-14] io.gosaas.assessment.web.StructureServlet  - FINISHED 
+INFO    2021-08-17 17:47:18,251 [http-nio-8080-exec-11] io.gosaas.assessment.web.ItemServlet  - doGet() Triggered
+INFO    2021-08-17 17:47:18,253 [http-nio-8080-exec-11] io.gosaas.assessment.web.ItemServlet  - Displaying the existing items list
+INFO    2021-08-17 17:47:18,253 [http-nio-8080-exec-11] io.gosaas.assessment.databaseAccessObject.ItemDAO  - Establishing Connection
+INFO    2021-08-17 17:47:18,257 [http-nio-8080-exec-11] io.gosaas.assessment.databaseAccessObject.ItemDAO  - Connection Established Successfully
+INFO    2021-08-17 17:47:18,257 [http-nio-8080-exec-11] io.gosaas.assessment.databaseAccessObject.ItemDAO  - Executing Query :: select * from items
+INFO    2021-08-17 17:47:18,258 [http-nio-8080-exec-11] io.gosaas.assessment.web.ItemServlet  - Converting Response to JSON String [{"id":1,"Class":"Class01","description":"Description01"},{"id":2,"Class":"Class02","description":"Description02"},{"id":3,"Class":"Class03","description":"Description03"},{"id":4,"Class":"Class04","description":"Description04"},{"id":6,"Class":"Item Test Class","description":"Item Test Description"},{"id":8,"Class":"new","description":"new"},{"id":9,"Class":"new01","description":"new01\n"},{"id":10,"Class":"test","description":"testupdated\n"},{"id":11,"Class":"new","description":"new"},{"id":12,"Class":"test","description":"test"}]
+INFO    2021-08-17 17:47:18,259 [http-nio-8080-exec-11] io.gosaas.assessment.web.ItemServlet  - FINISHED 
+INFO    2021-08-17 17:47:19,961 [http-nio-8080-exec-12] io.gosaas.assessment.web.AttachmentServlet  - doGet() Triggered
+INFO    2021-08-17 17:47:19,962 [http-nio-8080-exec-12] io.gosaas.assessment.web.AttachmentServlet  - Searching for Attachments having Item ID 1
+INFO    2021-08-17 17:47:19,962 [http-nio-8080-exec-12] io.gosaas.assessment.databaseAccessObject.AttachmentDAO  - Establishing Connection
+INFO    2021-08-17 17:47:19,967 [http-nio-8080-exec-12] io.gosaas.assessment.databaseAccessObject.AttachmentDAO  - Connection Established Successfully
+INFO    2021-08-17 17:47:19,967 [http-nio-8080-exec-12] io.gosaas.assessment.databaseAccessObject.AttachmentDAO  - Executing Query :: select * from attachments where itemid=?
+INFO    2021-08-17 17:47:19,972 [http-nio-8080-exec-12] io.gosaas.assessment.web.AttachmentServlet  - Converting Response to JSON String [{"aid":1,"itemid":1,"filename":"C:\\fakepath\\me.jpeg","description":"Description01","category":"Category:  A","shared":"Yes","checkedoutby":"Areej","revision":1},{"aid":2,"itemid":1,"filename":"C:\\fakepath\\pic.jpeg","description":"Description02","category":"Category:  B","shared":"No","checkedoutby":"Areej","revision":1},{"aid":3,"itemid":1,"filename":"C:\\fakepath\\cnic.jpeg","description":"Description03","category":"Category:  C","shared":"No","checkedoutby":"Areej","revision":2}]
+INFO    2021-08-17 17:47:19,972 [http-nio-8080-exec-12] io.gosaas.assessment.web.AttachmentServlet  - FINISHED 
+INFO    2021-08-17 17:47:21,911 [http-nio-8080-exec-20] io.gosaas.assessment.web.ItemServlet  - doGet() Triggered
+INFO    2021-08-17 17:47:21,912 [http-nio-8080-exec-20] io.gosaas.assessment.web.ItemServlet  - Displaying the existing items list
+INFO    2021-08-17 17:47:21,912 [http-nio-8080-exec-20] io.gosaas.assessment.databaseAccessObject.ItemDAO  - Establishing Connection
+INFO    2021-08-17 17:47:21,917 [http-nio-8080-exec-20] io.gosaas.assessment.databaseAccessObject.ItemDAO  - Connection Established Successfully
+INFO    2021-08-17 17:47:21,917 [http-nio-8080-exec-20] io.gosaas.assessment.databaseAccessObject.ItemDAO  - Executing Query :: select * from items
+INFO    2021-08-17 17:47:21,919 [http-nio-8080-exec-20] io.gosaas.assessment.web.ItemServlet  - Converting Response to JSON String [{"id":1,"Class":"Class01","description":"Description01"},{"id":2,"Class":"Class02","description":"Description02"},{"id":3,"Class":"Class03","description":"Description03"},{"id":4,"Class":"Class04","description":"Description04"},{"id":6,"Class":"Item Test Class","description":"Item Test Description"},{"id":8,"Class":"new","description":"new"},{"id":9,"Class":"new01","description":"new01\n"},{"id":10,"Class":"test","description":"testupdated\n"},{"id":11,"Class":"new","description":"new"},{"id":12,"Class":"test","description":"test"}]
+INFO    2021-08-17 17:47:21,920 [http-nio-8080-exec-20] io.gosaas.assessment.web.ItemServlet  - FINISHED 
+INFO    2021-08-17 17:47:23,769 [http-nio-8080-exec-17] io.gosaas.assessment.web.AMLServlet  - doGet() Triggered
+INFO    2021-08-17 17:47:23,770 [http-nio-8080-exec-17] io.gosaas.assessment.web.AMLServlet  - Searching for AMLs having Item ID 1
+INFO    2021-08-17 17:47:23,770 [http-nio-8080-exec-17] io.gosaas.assessment.databaseAccessObject.AMLDAO  - Establishing Connection
+INFO    2021-08-17 17:47:23,773 [http-nio-8080-exec-17] io.gosaas.assessment.databaseAccessObject.AMLDAO  - Connection Established Successfully
+INFO    2021-08-17 17:47:23,773 [http-nio-8080-exec-17] io.gosaas.assessment.databaseAccessObject.AMLDAO  - Executing Query :: select * from aml where mitemid=?
+INFO    2021-08-17 17:47:23,774 [http-nio-8080-exec-17] io.gosaas.assessment.web.AMLServlet  - Converting Response to JSON String [{"mid":1,"mitemid":1,"mpart":"ABC","manufacturer":"ABC","registryid":1,"amlstatus":"Active","description":"ABC","mstatus":"Active"}]
+INFO    2021-08-17 17:47:23,774 [http-nio-8080-exec-17] io.gosaas.assessment.web.AMLServlet  - FINISHED 
+INFO    2021-08-17 17:47:28,639 [http-nio-8080-exec-16] io.gosaas.assessment.web.ItemServlet  - doGet() Triggered
+INFO    2021-08-17 17:47:28,639 [http-nio-8080-exec-16] io.gosaas.assessment.web.ItemServlet  - Displaying the existing items list
+INFO    2021-08-17 17:47:28,639 [http-nio-8080-exec-16] io.gosaas.assessment.databaseAccessObject.ItemDAO  - Establishing Connection
+INFO    2021-08-17 17:47:28,642 [http-nio-8080-exec-16] io.gosaas.assessment.databaseAccessObject.ItemDAO  - Connection Established Successfully
+INFO    2021-08-17 17:47:28,643 [http-nio-8080-exec-16] io.gosaas.assessment.databaseAccessObject.ItemDAO  - Executing Query :: select * from items
+INFO    2021-08-17 17:47:28,647 [http-nio-8080-exec-16] io.gosaas.assessment.web.ItemServlet  - Converting Response to JSON String [{"id":1,"Class":"Class01","description":"Description01"},{"id":2,"Class":"Class02","description":"Description02"},{"id":3,"Class":"Class03","description":"Description03"},{"id":4,"Class":"Class04","description":"Description04"},{"id":6,"Class":"Item Test Class","description":"Item Test Description"},{"id":8,"Class":"new","description":"new"},{"id":9,"Class":"new01","description":"new01\n"},{"id":10,"Class":"test","description":"testupdated\n"},{"id":11,"Class":"new","description":"new"},{"id":12,"Class":"test","description":"test"}]
+INFO    2021-08-17 17:47:28,647 [http-nio-8080-exec-16] io.gosaas.assessment.web.ItemServlet  - FINISHED 
