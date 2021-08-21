@@ -1,0 +1,9 @@
+run web-app container :
+    https://www.middlewareinventory.com/blog/docker-tomcat-example-dockerfile-sample/
+run sql container :
+    https://phoenixnap.com/kb/mysql-docker-container
+link both :
+    https://raghwendra-sonu.medium.com/dockerizing-spring-boot-application-with-mysql-database-ce0a97e07f95
+
+
+#;yJne+@p&2pw5C8Pf7+89_GZI0D1dx?
